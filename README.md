@@ -1,5 +1,4 @@
-# 🐱 HuggingCatface STreaming Filesystem
-## With configureable write support sync
+# 🐱 HuggingCatface Filesystem
 
 ```bash
 $ ./nisten_hffs.py
@@ -38,8 +37,7 @@ $ ./nisten_hffs.py
 
 ```
 ❌ Deletions don't sync (Git limitation)
-❌ Max write: RAM/2 (usually 8GB)  
-❌ Writes take 2min to appear on HF
+❌ Max write: RAM/2 (so it's 16gb file if you only have 32GB)  
 ❌ Can't edit existing files, only add new
 ```
 
