@@ -1,4 +1,5 @@
-# 🐱 HuggingCatface Filesystem
+# 🐱 HuggingCatface STreaming Filesystem
+## With configureable write support sync
 
 ```bash
 $ ./nisten_hffs.py
@@ -30,7 +31,7 @@ huggingface-cli login  # First time only
 ```bash
 $ ./nisten_hffs.py
 → Repository: YOUR_USERNAME/YOUR_REPO  # Enter your repo
-→ Folder: my_mount                     # Pick folder name
+→ Folder: my_mount                     # Pick folder name to be mounted on your home dir
 ```
 
 ## ⚠️ Gotchas
