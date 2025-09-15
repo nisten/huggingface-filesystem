@@ -1,8 +1,4 @@
-# 🐱 NISTEN HFFS
-
-HuggingFace as a filesystem. Zero disk. Pure cloud.
-
-## 📸 What It Looks Like
+# 🐱 HuggingCatface Filesystem
 
 ```bash
 $ ./nisten_hffs.py
@@ -23,24 +19,11 @@ $ ./nisten_hffs.py
 Press Ctrl+C to unmount
 ```
 
-## ⚡ Quick Start
-
 ```bash
 huggingface-cli login  # First time only
 ./nisten_hffs.py
 ```
 
-## 🎮 Usage
-
-```bash
-# Read from HuggingFace
-cat ~/nisten_cats/READ/README.md    # Stream file
-ls ~/nisten_cats/READ/               # List files
-
-# Write to HuggingFace  
-cp data.txt ~/nisten_cats/WRITE/    # Upload file
-echo "done" > ~/nisten_cats/WRITE/status.txt # Create file
-```
 
 ## 🔧 Configure Your Own
 
@@ -94,25 +77,6 @@ HuggingFace ←──[2 min sync]── WRITE/
      │                           │
    READ/ ←──────[~/folder/]──────┘
 ```
-
-## 🌟 Real World
-
-```bash
-# 20GB disk, 128GB RAM machine
-$ df -h /
-/dev/sda1  20G  19G  1G  95% /
-
-$ ./nisten_hffs.py
-→ Repository: meta-llama/Llama-2-70b
-
-# Access 140GB model without downloading!
-$ python train.py --model ~/llama70b/READ/pytorch_model.bin
-Loading... [streams from cloud]
-Saving checkpoint to ~/llama70b/WRITE/checkpoint.pt
-✓ Auto-uploads!
-```
-
----
 
 ```
   /\_/\  
