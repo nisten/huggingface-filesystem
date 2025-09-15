@@ -36,9 +36,11 @@ $ ./nisten_hffs.py
 ## ⚠️ Gotchas
 
 ```
+❌ Writes/Sync to HF every 2 minutes, can be configured
 ❌ Deletions don't sync (Git limitation)
-❌ Max write: RAM/2 (so it's 16gb file if you only have 32GB)  
-❌ Can't edit existing files, only add new
+❌ Max write: RAM/2 (so it's 16gb file if you only have 32GB, can be configured)  
+❌ Can't edit existing files, only add new ( this will be fixed )
+
 ```
 
 ## 🔧 Troubleshooting
